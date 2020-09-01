@@ -1,6 +1,6 @@
 @font-face {
         font-family: 'TaameyFrankCLM';
-        src: url('https://www.sefaria.org/static/fonts/Taamey-Frank/TaameyFrankCLM-Medium.ttf') format('truetype');
+        src: url('/fonts/TaameyFrankCLM-Medium.ttf') format('truetype');
 }
 /* Global */
 html {
