@@ -1,0 +1,10 @@
+{
+  "name": "build-utils",
+  "description": "Sefaria Space Build Utils",
+  "scripts": {
+    "cors:media": "node ./cors.js --media --set"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4"
+  }
+}
