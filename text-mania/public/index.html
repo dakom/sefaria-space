@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Sefaria Space - Text Mania!</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <a id="back-btn" href="/" class="btn">🡨 BACK</a>
+        <div id="help-btn" class="btn">Help ?</div>
+        <div id="help-overlay">
+            <div id="help-close-btn" class="btn">X</div>
+            <p>Arrows to move the blaster, spacebar to fire</p>
+            <p>The sounds you hear for each letter are generated based on that letter.</p>
+            <p>Have fun!</p>
+            <hr/>
+            <p>In the future:</p>
+            <p>Blast the letters in the right order!</p>
+            <p>Complete word and verse combos for extra points</p>
+            <p>The text will cycle, including as much as it can from Sefaria's database</p>
+        </div>
+
+        <div id="ref">
+            <input id="ref-input" value="Genesis 1" />
+            <div id="start-btn" class="btn">Start!</div>
+            <div id="stop-btn" class="btn">Stop!</div>
+        </div>
+
+        <script src="fontobserver.js"></script>
+        <script src="wasm/index.js"></script>
+    </body>
+</html>
+

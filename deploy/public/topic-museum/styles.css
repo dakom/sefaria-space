@@ -1,0 +1,105 @@
+ @font-face {
+        font-family: 'TaameyFrankCLM';
+        src: url('/fonts/Taamey-Frank/TaameyFrankCLM-Medium.ttf') format('truetype');
+}
+
+ #iframeContainer {
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     background-color: white;
+     border-radius: 10px;
+     border: 1px black solid;
+ }
+
+ iframe {
+     width: calc(100vw - 2px);
+     height: calc(95vh - 1px);
+     position: absolute;
+     top: 5vh;
+     left: 1px;
+     background-color: white;
+ }
+ #intro {
+     width: 50vw; 
+     height: 50vh;
+     position: absolute;
+     top: 15vh;
+     left: 25vw;
+     font-family: Arial, Helvetica, sans-serif;
+     display: none;
+ }
+
+ #intro .instructions {
+     display: grid;
+        width: 100%;
+    grid-template-columns: 40% 1fr;
+     color: white;
+     margin-bottom: 3em;
+    text-shadow: -1px 1px 2px #000,
+                  1px 1px 2px #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000;
+ }
+
+ #intro li, #intro p {
+    font-size: x-large;
+ }
+ #intro .header {
+    font-weight: bold; 
+    font-size: xx-large;
+    text-align: center;
+ }
+#intro .button {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#begin {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: beige;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.footer {
+    display: none;
+}
+
+#unityContainer {
+    width: 100vw;
+    height: 100vh;
+}

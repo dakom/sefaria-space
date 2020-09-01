@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Topic Museum - Sefaria Space</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="fontobserver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+    <script src="extensions.js?cb=001"></script>
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">sefaria-space</div>
+      </div>
+    </div>
+    
+    <div id="iframeContainer">
+        <div id="close-iframe" class="close"></div>
+    </div>
+    <div id="intro">
+        <div class="instructions">
+            <div>
+                <span class="header">Controls</span>
+                <ul>
+                    <li><b>WASD</b> or <b>Arrows</b> to move</li>
+                    <li><b>Mouse</b> to look</li>
+                    <li><b>Click</b> to activate</li>
+                    <li><b>Spacebar</b> to jump</li>
+                    <li><b>Escape</b> for regular mouse</li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">How To</span>
+                <ul>
+                    <li>Go to the tablet and choose a topic.</li>
+                    <li>Activate some artwork to view in full.</li>
+                    <li>Listen to the assistant for more help.</li>
+                    <li>Walk out the door to leave</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div id="begin" class="button">Click to Begin</div>
+    </div>
+
+    <script>
+        window._myExtensions.init();
+    </script>
+  </body>
+</html>
