@@ -13,5 +13,16 @@ void main() {
     color = vec4(v_uv, 1.0, 1.0);
     color = vec4(v_normal, 1.0);
 
-    color = texel;
+    vec3 n = v_normal;
+    vec3 l_dir = vec3(.5, .5, .5);
+
+    // https://www.lighthouse3d.com/tutorials/glsl-tutorial/directional-lights-per-pixel/
+    float intensity = max(dot(n,l_dir), 0.0);
+
+    vec3 diffuse = texel.rgb;
+    color = vec4(intensity * diffuse, 1.0);
+    //vec4 ambient = vec4(0.0, 0.0, 0.0, 1.0);
+
+    //color = max(intensity *  diffuse, ambient);
+   // color = texel;
 }
